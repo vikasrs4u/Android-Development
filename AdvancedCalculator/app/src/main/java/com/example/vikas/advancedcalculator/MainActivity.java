@@ -6,8 +6,6 @@
 //  Copyright © 2018 Vikas Radhakrishna Shetty All rights reserved.
 //
 
-
-
 package com.example.vikas.advancedcalculator;
 
 import android.support.v7.app.AppCompatActivity;
