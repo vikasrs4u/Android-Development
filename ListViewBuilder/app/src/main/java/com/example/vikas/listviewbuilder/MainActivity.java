@@ -44,12 +44,13 @@ public class MainActivity extends AppCompatActivity
         adapter = new ArrayAdapter<String>(getApplicationContext(), R.layout.list_blue_text,list);
         listData.setAdapter(adapter);
 
-        
+
         addButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 //After we press equals we need to start fresh transaction so have added this.
-                if (editTextFieldData.getText().length() > 1)
+                if (editTextFieldData.getText().length() > 0)
                 {
 
                     list.add(editTextFieldData.getText().toString());
