@@ -8,9 +8,12 @@
 
 package com.example.vikas.listviewbuilder;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
@@ -62,5 +65,21 @@ public class MainActivity extends AppCompatActivity
 
             }
         });
+
+        listData.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> a, View v, int position, long id) {
+                final int positionToRemove = position;
+
+                String selectedFromList = (String) listData.getItemAtPosition(position);
+
+                Intent nextpg = new Intent(MainActivity.this,MainActivity1.class);
+                nextpg.putExtra("asasas", selectedFromList);
+                startActivity(nextpg);
+
+            }
+        });
+
+
     }
 }
