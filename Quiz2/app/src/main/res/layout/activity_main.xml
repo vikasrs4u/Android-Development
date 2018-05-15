@@ -1,0 +1,62 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#98AFC7"
+    android:orientation="vertical"
+    android:stretchColumns="1">
+
+
+    <TableRow android:background="#ff0000"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp">
+
+
+        <TextView
+            android:layout_column="0"
+            android:layout_marginTop="20dp"
+            android:text="NAME"
+            android:textColor="#fff"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/userName"
+            android:layout_column="1"
+            android:layout_marginTop="20dp"
+            android:hint="Enter Your Name"
+            android:textColor="#000" />
+    </TableRow>
+
+    <TableRow android:background="#0000FF"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+
+        <TextView
+            android:layout_column="0"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:text="PASSWORD"
+            android:textColor="#fff" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_column="1"
+            android:layout_marginTop="20dp"
+            android:hint="Enter Your Password"
+            android:textColor="#000" />
+    </TableRow>
+
+
+    <TableRow android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/loginBtn"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_span="2"
+            android:text="SUBMIT"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </TableRow>
+</TableLayout>
