@@ -23,6 +23,7 @@
             android:id="@+id/userName"
             android:layout_column="1"
             android:layout_marginTop="20dp"
+            android:paddingLeft="8dp"
             android:hint="Enter Your Name"
             android:textColor="#000" />
     </TableRow>
@@ -43,6 +44,7 @@
             android:layout_column="1"
             android:layout_marginTop="20dp"
             android:hint="Enter Your Password"
+            android:paddingLeft="8dp"
             android:textColor="#000" />
     </TableRow>
 
