@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
      */
     private void displayPrice(int number) {
         TextView priceTextView = (TextView) findViewById(R.id.price_text_view);
-        priceTextView.setText(NumberFormat.getCurrencyInstance().format(number));
+        priceTextView.setText("Total: "+NumberFormat.getCurrencyInstance().format(number)+"\n Thank You!!!");
     }
 
     public void increment(View view)
@@ -51,7 +51,12 @@ public class MainActivity extends AppCompatActivity {
 
     public void decrement(View view)
     {
-        numberOfCoffees--;
+        //If number of coffee is more than 0 then only we decrement, else let it be zero
+        if (numberOfCoffees>0)
+        {
+            numberOfCoffees--;
+        }
+
         display(numberOfCoffees);
     }
 }
