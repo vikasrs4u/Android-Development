@@ -1,0 +1,35 @@
+package com.example.vikas.imageslider;
+
+import android.content.Intent;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+
+public class emailAddressEntrySignupActivity extends AppCompatActivity
+{
+    private Button emailContinueButton;
+    @Override
+    protected void onCreate(Bundle savedInstanceState)
+    {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_email_address_entry_signup);
+
+        emailContinueButton = (Button) findViewById(R.id.emailContinueButton);
+
+        emailContinueButton.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                openPasswordEntryPage();
+            }
+        });
+    }
+
+    public void openPasswordEntryPage()
+    {
+        Intent intent = new Intent(this,passwordEntrySignupActivity.class);
+        startActivity(intent);
+    }
+}

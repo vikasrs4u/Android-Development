@@ -16,6 +16,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".emailAddressEntrySignupActivity" />
+        <activity android:name=".passwordEntrySignupActivity" />
+        <activity android:name=".genderSelectionSignup" />
+        <activity android:name=".preferenceSelectionSignup" />
+        <activity android:name=".ageEntrySignup"></activity>
     </application>
 
 </manifest>
