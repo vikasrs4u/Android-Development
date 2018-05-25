@@ -1,4 +1,13 @@
+/*
+ * *
+ *  * Created by Vikas Radhakrishna Shetty on 5/20/18
+ *  * Copyright (c) 2018 . All rights reserved.
+ *  * Last modified 5/25/18 2:40 PM
+ *
+ */
+
 package com.example.vikas.imageslider;
+
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
