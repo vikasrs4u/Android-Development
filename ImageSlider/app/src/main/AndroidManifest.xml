@@ -20,7 +20,8 @@
         <activity android:name=".passwordEntrySignupActivity" />
         <activity android:name=".genderSelectionSignup" />
         <activity android:name=".preferenceSelectionSignup" />
-        <activity android:name=".ageEntrySignup"></activity>
+        <activity android:name=".ageEntrySignup" />
+        <activity android:name=".HobbiesEntrySignup"></activity>
     </application>
 
 </manifest>

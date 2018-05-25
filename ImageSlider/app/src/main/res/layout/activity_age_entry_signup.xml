@@ -1,49 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:app="http://schemas.android.com/apk/res-auto"
-xmlns:tools="http://schemas.android.com/tools"
-android:layout_width="match_parent"
-android:layout_height="match_parent"
-tools:context=".ageEntrySignup">
-
-<TextView
-    android:id="@+id/getStartedTextView"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_centerHorizontal="true"
-    android:layout_marginLeft="24dp"
-    android:layout_marginRight="24dp"
-    android:layout_marginTop="100dp"
-    android:text="Select Your Date Of Birth:"
-    android:textColor="#747474"
-    android:textSize="24sp"
-    android:textStyle="bold" />
+    android:layout_height="match_parent"
+    tools:context=".ageEntrySignup">
 
-<EditText
-    android:id="@+id/emailAddressEditText"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_below="@id/getStartedTextView"
-    android:layout_centerHorizontal="true"
-    android:layout_marginLeft="24dp"
-    android:layout_marginRight="24dp"
-    android:layout_marginTop="16dp"
-    android:hint="enter your email address" />
+    <TextView
+        android:id="@+id/getStartedTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="100dp"
+        android:text="When were you born?"
+        android:textColor="#747474"
+        android:textSize="24sp"
+        android:textStyle="bold" />
 
-<Button
-    android:id="@+id/emailContinueButton"
-    style="@android:style/Widget.Material.Button.Borderless.Colored"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_below="@id/emailAddressEditText"
-    android:layout_marginLeft="24dp"
-    android:layout_marginRight="24dp"
-    android:layout_marginTop="16dp"
-    android:background="#ff4081"
-    android:backgroundTint="#ff4081"
-    android:elevation="24dp"
-    android:text="Continue"
-    android:textColor="@android:color/white"
-    android:textStyle="bold" />
+    <DatePicker
+        android:id="@+id/ageSelectionPicker"
+        style="@style/MyDatePicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/getStartedTextView"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#ff4081"
+        android:calendarTextColor="#ff4081"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner"
+        android:yearListSelectorColor="@color/colorPrimaryDark" />
+
+    <Button
+        android:id="@+id/ageContinueButton"
+        style="@android:style/Widget.Material.Button.Borderless.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ageSelectionPicker"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="16dp"
+        android:background="#ff4081"
+        android:backgroundTint="#ff4081"
+        android:elevation="24dp"
+        android:text="Continue"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
 
 </RelativeLayout>

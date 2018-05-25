@@ -72,7 +72,7 @@ public class preferenceSelectionSignup extends AppCompatActivity {
 
     public void openAgeEntryPage()
     {
-        Intent intent = new Intent(this,genderSelectionSignup.class);
+        Intent intent = new Intent(this,ageEntrySignup.class);
         startActivity(intent);
     }
 }
