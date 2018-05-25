@@ -7,6 +7,17 @@
     tools:context=".emailAddressEntrySignupActivity">
 
     <TextView
+        android:id="@+id/numberOfPagesLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="24dp"
+        android:text="1/6"
+        android:textColor="#747474"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
         android:id="@+id/getStartedTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

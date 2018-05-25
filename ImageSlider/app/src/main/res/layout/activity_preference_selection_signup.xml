@@ -7,12 +7,24 @@
     tools:context=".preferenceSelectionSignup">
 
     <TextView
+        android:id="@+id/numberOfPagesLeft"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:gravity="right"
+        android:layout_marginRight="24dp"
+        android:text="4/6"
+        android:textColor="#747474"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
         android:id="@+id/getStartedTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="24dp"
         android:layout_marginRight="24dp"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="120dp"
         android:text="Intrested in :"
         android:textColor="#747474"
         android:textSize="24sp"
